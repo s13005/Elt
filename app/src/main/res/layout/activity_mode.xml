@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ModeActivity"
+    android:background="#FFFFFF"
+    android:id="@+id/mode">
+
+    <TextView
+        android:id="@+id/text_mode"
+        android:text="モード選択"
+        android:textSize="65sp"
+        android:textColor="#222222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_mode1"
+        android:background="#dcdcdc"
+        android:text="英単語問題"
+        android:textSize="35sp"
+        android:layout_width="300sp"
+        android:layout_height="70sp"
+        android:layout_below="@+id/text_mode"
+        android:layout_alignLeft="@+id/button_mode2"
+        android:layout_alignStart="@+id/button_mode2"
+        android:layout_marginTop="37dp" />
+    <Button
+        android:id="@+id/button_mode2"
+        android:background="#dcdcdc"
+        android:text="穴埋め問題"
+        android:textSize="35sp"
+        android:layout_width="300sp"
+        android:layout_height="70sp"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/button_mode1"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/mode3"
+        android:background="#dcdcdc"
+        android:text="並び替え問題"
+        android:textSize="35sp"
+        android:layout_width="300sp"
+        android:layout_height="70sp"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/button_mode2"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/text_score"
+        android:text="スコア表示"
+        android:textSize="30sp"
+        android:textColor="#222222"
+        android:layout_width="150sp"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/mode3"
+        android:layout_alignEnd="@+id/mode3" />
+
+</RelativeLayout>
